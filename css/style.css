@@ -1,0 +1,439 @@
+@charset "UTF-8";
+
+/* Reset 시작 */
+* {
+    color: #333333;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #222;
+}
+
+a:visited {
+    color: #222;
+}
+
+a:hover {
+    color: #333;
+}
+
+a:active {
+    color: #333;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Reset 끝 */
+
+/* 가이드 라인 */
+div#wrap {
+    /*    border: 1px solid #000;*/
+}
+
+header#header {
+    /*    border: 1px solid #000;*/
+}
+
+div#slide {
+/*    border: 1px solid #000;*/
+}
+
+div#contents {
+/*    border: 1px solid #000;*/
+}
+
+div#contents > div {
+/*    border: 1px solid #000;*/
+}
+
+footer#footer {
+/*    border: 1px solid #000;*/
+}
+
+div#footerRight {
+/*    border: 1px solid #000;*/
+}
+
+/* 가이드 라인 */
+
+/* header#header시작 */
+header#header {
+    width: 100%;
+    height: 100px;
+}
+
+#header #headerWrap {
+    width: 1200px;
+    /*    border: 1px solid #000;*/
+    margin: 0 auto;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+}
+
+#header div#headerLogo {
+    width: 200px;
+    height: 40px;
+}
+
+#header #headerLogo > h1 {
+    color: #339096;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* nav#gnb 시작 */
+#header #headerWrap nav#gnb {
+    width: 800px;
+}
+
+#header #headerWrap ul#mainMenu {
+    margin-top: 55px;
+
+    position: relative;
+    left: 370px;
+    display: inline-block;
+}
+
+#header #headerWrap #mainMenu::after {
+    content: "";
+    height: 40px;
+    display: inline-block;
+}
+
+#header #headerWrap #gnb li.mainLi {
+    float: left;
+}
+
+#header #headerWrap #gnb a {
+    width: 150px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgba(69, 157, 163, 0.7);
+    display: inline-block;
+}
+
+#header #headerWrap #gnb li.mainLi:not(:first-child) > a {
+    border-left: none;
+}
+
+#header #headerWrap #gnb li.mainLi > a:hover {
+    color: #efe535;
+    background-color: rgba(69, 157, 163, 0.7);
+}
+
+#header #headerWrap #gnb ul.subMenu {
+    display: none;
+
+    position: absolute;
+    z-index: 2;
+}
+
+#header #headerWrap #gnb ul.subMenu a {
+    border: 1px solid rgba(69, 157, 163, 0.0);
+}
+
+#header #headerWrap #gnb ul.subMenu a:hover {
+    color: #efe535;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+/* nav#gnb 끝 */
+
+/* header#header끝 */
+
+/*///// div#subMenuBG ////*/
+div#subMenuBG {
+    position: relative;
+    top: -2px;
+
+    display: none;
+    z-index: 1;
+}
+
+div#subMenuBGLayout {
+    width: 1200px;
+    height: 180px;
+    margin: 0 auto;
+    background-color: rgba(69, 157, 163, 0.6);
+
+}
+
+/*///// div#subMenuBG ////*/
+
+
+/* div#wrap 시작 */
+div#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* div#slide 시작 */
+div#slide {
+    height: 300px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+#slide a {
+    position: absolute;
+}
+
+#slide a:not(:first-child) {
+    display: none;
+}
+
+#slide span {
+    color: #d4ca2e;
+    width: 340px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rgba(69, 157, 163, 0.6);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
+
+    position: absolute;
+    left: 80%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* div#slide 끝 */
+
+/* div# contents 시작 */
+div#contents {
+    height: 200px;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+/* 싱글탭 공통사항 */
+div#contents > div.singleTab > button {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 14px;
+    border: 1px solid #aaa;
+    border-bottom: none;
+
+    position: relative;
+    left: 40px;
+    top: 1px;
+
+}
+
+#contents > .singleTab > div.tabContent {
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #aaa;
+}
+
+div#contents > div {
+    margin-top: 7px;
+}
+
+/* 싱글탭 공통사항 */
+
+/* div#notice 시작 */
+#contents #notice #noticeTabBtn {
+    background-color: #fff;
+}
+
+#contents #notice .tabContent {
+    width: 400px;
+    padding: 9px;
+}
+
+#contents #notice span {
+    font-size: 12px;
+    line-height: 26px;
+    display: inline-block;
+}
+
+#contents #notice span.subject {
+    width: 300px;
+    /*    border: 1px solid #000;*/
+}
+
+#contents #notice span.regDate {
+    width: 70px;
+    /*    border: 1px solid #000;*/
+    text-align: right;
+}
+
+/* div#notice 끝 */
+
+/* div#gallery 시작 */
+#contents #gallery .tabContent {
+    width: 400px;
+    padding: 10px;
+    text-align: center;
+}
+
+#contents #gallery #galleryTabBtn {
+    top: 0;
+}
+
+/* div#gallery 끝 */
+
+/* div#shortcut 시작 */
+#contents div#shortcut {
+    width: 400px;
+    text-align: center;
+
+    padding-top: 30px;
+}
+
+/* div#shortcut 끝 */
+
+
+
+
+/* div# contents 끝 */
+
+/* div#wrap 시작 */
+
+/* footer#footer 시작 */
+footer#footer {
+    height: 100px;
+}
+
+#footer #footerWarp {
+    width: 1200px;
+    margin: 0 auto;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+#footer #footerWarp #copyright{
+    width: 1000px;
+    line-height: 100px;
+    text-align: center;
+
+}
+/* div#footerRight  시작 */
+div#footerRight{
+}
+#footerRight #snsIcon{
+    width: 200px;
+    text-align: center;
+}
+#footerRight #familySite{
+    padding-top: 20px;
+    text-align: center;
+}
+#footerRight #familySite select{
+    width: 150px;
+    height: 35px;
+    font-size: 18px;
+}
+/* div#footerRight  끝 */
+
+/* footer#footer 끝 */
+
+/* 레이어 팝업 */
+div#contents span.layerPopupPoint {
+    cursor: pointer;
+}
+
+div#layerPopupBG {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+
+    display: none;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#layerPopupBG > div#layerPopup {
+    padding: 20px;
+    border: 6px solid rgba(69, 157, 163, 0.3);
+    border-radius: 20px;
+    background-color: #fff;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#layerPopupBG h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+#layerPopupBG p {
+    line-height: 26px;
+    margin: 20px 0;
+}
+
+#layerPopupBG p span {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+#layerPopupBG #btnArea {
+    text-align: right;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+
+#layerPopupBG button#closeBtn {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 14px;
+}
+
+/* 레이어 팝업 */
+
+/* IE, Chrome 동일 결과 적용 */
+header,
+nav,
+footer,
+section,
+article,
+detail,
+main {
+    display: block;
+}
